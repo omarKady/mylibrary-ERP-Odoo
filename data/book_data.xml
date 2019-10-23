@@ -1,0 +1,59 @@
+<odoo>
+    <data>
+        <record id="student_1" model="mylibrary.student">
+            <field name="name">john adam</field>
+            <field name="email">john45@hotmail.com</field>
+            <field name="date_of_birth">10/10/2007</field>
+            <field name="mobile_phone">0156476562</field>
+            <field name="state">Chicago</field>
+            <field name="gender">m</field>
+        </record>
+        <record id="student_2" model="mylibrary.student">
+            <field name="name">lindsey mark</field>
+            <field name="email">lindsey90@yahoo.com</field>
+            <field name="date_of_birth">10/11/2008</field>
+            <field name="mobile_phone">01564545862</field>
+            <field name="state">New York</field>
+            <field name="gender">f</field>
+        </record>
+
+        <record id="publisher_1" model="mylibrary.publisher">
+            <field name="name">Progress Publishers</field>
+            <field name="publisher_definition">Progress Publishers was a Moscow-based Soviet publisher founded in 1931.
+It was noted for its English-language editions of books on Marxism–Leninism.
+Progress Publishers were particularly also known for their "Short History of USSR" and ABC series (ABC of Party, ABC of Socialism, ABC of Dialectical Materialism, etc.). They also published many scientific books, books on arts, political books, classic books, children's literature, novels and short fiction, books in source languages for people studying foreign languages, guidebooks and photographic albums. </field>
+            <field name="mobile_phone">+91-9013370747</field>
+            <field name="country">Russia</field>
+            <field name="state">Moscow</field>
+        </record>
+        <record id="publisher_2" model="mylibrary.publisher">
+            <field name="name">Good Books Publishers</field>
+            <field name="publisher_definition">Good Books Publishers was a London-based Soviet publisher founded in 1920.
+It was noted for its English-language editions. They also published many scientific books, books on arts, children's literature, novels and short fiction, books in source languages for people studying foreign languages, guidebooks and photographic albums. </field>
+            <field name="mobile_phone">+91-9013380915</field>
+            <field name="country">England</field>
+            <field name="state">London</field>
+        </record>
+        <record id="book_1" model="mylibrary.book">
+            <field name="name">One Hundred Years of Solitude</field>
+            <field name="description">One Hundred Years of Solitude is a landmark 1967 novel by Colombian author Gabriel García Márquez that tells the multi-generational story of the Buendía family, whose patriarch, José Arcadio Buendía, founded the town of Macondo, a fictitious town in the country of Colombia. </field>
+            <field name="author">Gabriel García Márquez</field>
+            <field name="pages">417</field>
+            <field name="type">literature</field>
+        </record>
+        <record id="book_2" model="mylibrary.book">
+            <field name="name">The Body</field>
+            <field name="description">Bill Bryson, bestselling author of A Short History of Nearly Everything, takes us on a head-to-toe tour of the marvel that is the human body. As addictive as it is comprehensive, this is Bryson at his very best, a must-read owner's manual for everybody.</field>
+            <field name="author">Bill Bryson</field>
+            <field name="pages">464</field>
+            <field name="type">medicine</field>
+        </record>
+        <record id="book_3" model="mylibrary.book">
+            <field name="name">The History of the Ancient World</field>
+            <field name="description">This is the first volume in a bold new series that tells the stories of all peoples, connecting historical events from Europe to the Middle East to the far coast of China, while still giving weight to the characteristics of each country. </field>
+            <field name="author">Susan Wise Bauer</field>
+            <field name="pages">896</field>
+            <field name="type">history</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,20 @@
+<odoo>
+
+    <!-- Book Report -->
+    <report id="mylibrary_book_report"
+            string="Book Report"
+            model="mylibrary.book"
+            report_type="qweb-pdf"
+            name="mylibrary.book_report_template"
+            file="mylibrary.book_report_template"
+    />
+
+    <!-- Publisher Report -->
+    <report id="mylibrary_publisher_report"
+            string="Publisher Report"
+            model="mylibrary.publisher"
+            report_type="qweb-pdf"
+            name="mylibrary.publisher_report_template"
+            file="mylibrary.publisher_report_template"
+            />
+</odoo>

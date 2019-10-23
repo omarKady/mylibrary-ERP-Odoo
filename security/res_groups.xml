@@ -1,0 +1,28 @@
+<odoo>
+    <data noupdate="0">
+
+        <record id="library_security_group" model="ir.module.category">
+            <field name="name">Library Category</field>
+        </record>
+
+        <record id="library_student_group" model="res.groups">
+            <field name="name">Library Student Group</field>
+            <field name="category_id" ref="library_security_group"/>
+            <field name="implied_ids" eval="[(4,ref('base.group_user'))]"/>
+        </record>
+
+        <record id="library_manager_group" model="res.groups">
+            <field name="name">Library Manager Group</field>
+            <field name="category_id" ref="library_security_group"/>
+            <field name="implied_ids" eval="[(4,ref('library_student_group'))]"/>
+        </record>
+
+        <!-- Specific Record Rule -->
+        <record id="library_student_group_rule" model="ir.rule">
+            <field name="name">Library Student Rule</field>
+            <field name="model_id" ref="model_mylibrary_student"/>
+            <field name="groups" eval="[(4,ref('library_student_group'))]"/>
+            <field name="domain_force">[('id','=',user.id)]</field>
+        </record>
+    </data>
+</odoo>

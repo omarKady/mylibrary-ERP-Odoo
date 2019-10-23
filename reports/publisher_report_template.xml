@@ -1,0 +1,40 @@
+<odoo>
+    <template id="publisher_report_template">
+        <t t-call="report.html_container">
+            <t t-call="report.external_layout">
+                <div class="page">
+                    <div class="row bg-primary">
+                        <div class="col-xs-2">Name</div>
+                        <div class="col-xs-2">Country</div>
+                        <div class="col-xs-2">Phone</div>
+                        <div class="col-xs-2">Books</div>
+                        <div class="col-xs-4">Publisher definition</div>
+                    </div>
+                    <t t-foreach="docs" t-as="o">
+                        <div class="row">
+                            <div class="col-xs-2">
+                                <h4><span t-field="o.name"/></h4>
+                            </div>
+                            <div class="col-xs-2">
+                                <h4><span t-field="o.country"/></h4>
+                            </div>
+                            <div class="col-xs-2">
+                                <h4><span t-field="o.mobile_phone"/></h4>
+                            </div>
+                            <div class="col-xs-2">
+                                <h4>
+                                    <tr t-foreach="o.books" t-as="book">
+                                        <span t-field="book.name"/><hr color="blue"></hr>
+                                    </tr>
+                                </h4>
+                            </div>
+                            <div class="col-xs-4">
+                                <h4><span t-field="o.publisher_definition"/></h4>
+                            </div>
+                        </div>
+                    </t>
+                </div>
+            </t>
+        </t>
+    </template>
+</odoo>

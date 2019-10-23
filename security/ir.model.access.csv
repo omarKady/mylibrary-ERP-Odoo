@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+library_student_group_access,Library Student Perm,model_mylibrary_student,library_student_group,1,0,0,0
+library_student_group_borrow_access,Library Student Borrow Perm,model_mylibrary_borrow_by,library_student_group,1,0,0,0
+library_manager_group_access,Library Manager Perm,model_mylibrary_student,library_manager_group,1,1,0,0
+library_manager_book_access,Library Manager Book Perm,model_mylibrary_book,library_manager_group,1,1,1,1
+library_manager_publisher_access,Library Manager Publisher Perm,model_mylibrary_publisher,library_manager_group,1,1,1,1
+library_manager_borrow_access,Library Manager Borrow Perm,model_mylibrary_borrow_by,library_manager_group,1,1,1,1
